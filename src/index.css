@@ -5,9 +5,77 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: red;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+
+/* App.css */
+.grid-container {
+  display: grid;
+  grid-template-rows: auto 1fr auto; /* Header, Body ve Footer için satır düzenlemesi */
+  min-height: 100vh; /* Sayfayı tam ekran yap */
+}
+
+header {
+
+  padding: 10px;
+  text-align: center;
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: #171E20;
+}
+
+footer {
+  padding: 10px;
+  text-align: center;
+}
+
+.card-text{
+  overflow-x: hidden !important;
+  
+}
+.moviedes{
+  box-shadow: rgba(255, 255, 255, 0.35) 0px 5px 15px;
+  transition: all; transition-duration: 0.8s;
+}
+
+.moviedes:hover{
+  
+  width: 21rem !important;
+  box-shadow: rgba(255, 255, 255, 0.17) 0px -23px 25px 0px inset, rgba(255, 255, 255, 0.15) 0px -36px 30px 0px inset, rgba(255, 255, 255, 0.1) 0px -79px 40px 0px inset, rgba(255, 255, 255, 0.06) 0px 2px 1px, rgba(254, 254, 254, 0.09) 0px 4px 2px, rgba(255, 254, 254, 0.09) 0px 8px 4px, rgba(255, 153, 0, 0.09) 0px 16px 8px, rgba(255, 136, 0, 0.09) 0px 32px 16px;
+  margin: 50px !important;
+  margin-bottom: auto !important;
+  transition: all 2s; 
+   transition-duration: 3s;
+}
+
+/* Scroll çubuklarına genel stil */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* Scroll çubuğu arka plan rengi */
+::-webkit-scrollbar-track {
+  background-color: #888;
+  border-radius: 4px;
+}
+
+/* Scroll çubuğu dolgu rengi */
+::-webkit-scrollbar-thumb {
+  background-color: #f1f1f1;
+  border-radius: 4px;
+}
+
+/* Scroll çubuğu üzerine gelindiğinde */
+::-webkit-scrollbar-thumb:hover {
+  background-color: #f1f1f1;
 }
