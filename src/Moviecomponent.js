@@ -8,7 +8,7 @@ import 'bootstrap/dist/css/bootstrap.css';
 
 
 
-export default function Moviecomponent({film}) {
+export default function Moviecomponent({ film }) {
 
     return (
         <Card className='bg-dark text-light moviedes'
@@ -36,16 +36,19 @@ export default function Moviecomponent({film}) {
                             alt="Card cap"
                             src={film.Image}
                             width="100%"
-                            style={{ minHeight: '250px',maxHeight:'350px' }}
+                            style={{ minHeight: '250px', maxHeight: '350px' }}
                         />
                     </Col>
 
                     <Col className="d-flex flex-column  align-items-center  m-1 p-0" xs="12" md="12">
 
-                        <CardText className='text-center' style={{height:'80px',overflow:'scroll'}}>
+                        <CardText className='text-center' style={{ height: '80px', overflow: 'scroll' }}>
                             {film.about}
                         </CardText>
-                        <button className="btn btn-warning btn-block m-1">Click</button>
+                        <div className='d-flex   justify-content-center text-center'>
+                            <button className="btn btn-warning btn-block m-1">Click</button>
+                            <p className='Imdb_Star  m-1 p-1 text-warning' style={{ fontSize: '1.4em', fontFamily:'bolt'}} >{film.star}</p>
+                        </div>
                     </Col>
                 </div>
             </CardBody>
